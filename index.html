@@ -1,30 +1,58 @@
 <head>
+    <!-- Ensures proper scaling and responsive behavior on all mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
     <style>
-        /* Ensures the content fits and is centered on all mobile devices */
-        body, html {
+        /* Universal reset for margin and padding */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and HTML settings to use full height and center content */
+        body, html {
             height: 100%;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
         }
+
+        /* Container that holds the content */
         .container {
-            width: 100%;
-            max-width: 400px;
+            width: 90%;
+            max-width: 400px; /* Limits width on larger screens */
             padding: 20px;
             background: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             text-align: center;
         }
+
+        /* Ensures text and buttons fit well on small screens */
+        .container h1 {
+            font-size: 1.5rem;
+        }
+
+        .container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
+        <!-- This container will fit well on all iPhones and Android devices -->
+        
         <!-- Script content goes here -->
         <script type="text/javascript">
             var wMudz_Elv_BKTmjc = {"it": 4350231, "key": "f1568"};
